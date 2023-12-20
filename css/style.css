@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/*variáveis css*/
+
+body {
+  background-color: #a5c0ecb4;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #08285b;
+  box-shadow: 0 15px 35px 0 #063d4a93;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+button .faixa {
+  width: 50px;
+  height: 500px;
+  background-color: #08285b;
+  position: absolute;
+  animation: faixaGirando 1s linear infinite;
+  transition: all 0.3s;
+}
+
+button:hover .faixa {
+  background-color: #2177b4;
+}
+
+button .texto {
+  background-color: #d3e5e5;
+  padding: 10px 40px;
+  z-index: 2;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+button:hover .texto {
+  background-color: #2148b4;
+}
+
+button .texto p {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+button:hover .texto p {
+  color: #fff;
+}
+
+@keyframes faixaGirando {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
