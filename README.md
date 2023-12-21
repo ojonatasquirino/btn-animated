@@ -1,6 +1,7 @@
 <h1 align='center'> btn-animated  </h1>
 
-Este é um botão, mas não é qualquer botão. Este é um super animado desenvolvido com HTML e animações CSS.  
+## descrição do projeto
+Botão desenvolvido com animações CSS. 
 
 ## ambiente e ferramentas de codificação
 ![Git](https://img.shields.io/badge/-Git-0D1117?style=for-the-badge&logo=git&labelColor=0D1117)
